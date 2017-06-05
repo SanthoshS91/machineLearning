@@ -52,7 +52,7 @@
 										<header class="major">
 											<h2 class="stress">Abstract</h2>
 										</header>
-										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. After using several regression learners, we decided to discretize the data and employ models that can predict a binary positive or negative value for a player’s average player grade per game in a single year. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>									
+										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for a candidate if they were to join the NU Football team based on the results of a psychometric assessment survey. After experimenting with several regression learners, we decided to discretize the data and employ models that can predict whether a player’s average player grade per game in a single year would be positive or negative. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>									
 									</div>
 									<!--<span class="image"><img src="images/Stressed.png" alt="" /></span>-->
 								</div>
@@ -66,7 +66,7 @@
 										<header class="major">
 											<h2>Motivation</h2>
 										</header>
-										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘Player Grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. The Northwestern University men’s football team brought in $36,212,907 between the years 2015-2016 (Source: US Department of Education Equity in Athletics Data Analysis. https://ope.ed.gov/athletics/#/institution/details. Accessed April 19, 2017). The ability to predict future player performance at time of recruitment can allow NU Football to spend scholarship and other recruitment funds with greater return on investment.</p>
+										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. The Northwestern University men’s football team brought in $36,212,907 between the years 2015-2016 (Source: US Department of Education Equity in Athletics Data Analysis. https://ope.ed.gov/athletics/#/institution/details. Accessed April 19, 2017). The ability to predict future player performance at time of recruitment can allow NU Football to spend scholarship and other recruitment funds with greater return on investment. </p>
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
 								</div>					
@@ -79,7 +79,7 @@
 										<header class="major">
 											<h2>Approach</h2>
 										</header>
-										<p class="paratext">Player psychometric assessment survey scores (Troutwine Athletic Profile (TAP) score)  (http://therightprofile.com/) were comprised of 21 attributes. These attributes are all numeric with a mix of scores out of 100 or on a scale of 1-5.</p>
+										<p class="paratext">Player psychometric assessment survey scores (Troutwine Athletic Profile (TAP) score)  (http://therightprofile.com/) are comprised of 21 attributes and typically administered annually to every player. These attributes are all numeric with a mix of scores out of 100 or on a scale of 1-5.</p>
 										<p class="paratext">Examples of TAP scores include:
 										<ul class="tapScores">
 										  <li>Super Mental Toughness (1-100)</li>
@@ -88,7 +88,7 @@
 										  <li>Desire (1-5)</li>
 										  <li>Coachability (1-5)</li>
 										</ul>
-										<p class="paratext">ProFootball Player Grades are assigned by a human grader (a former coach or other football expert) after watching the video of a game and consists of giving each player a score from -2 to +2 in 0.1 increments based on their performance. An individual’s player grades are added together for an overall annual player grade.Since all our features are numeric, we used several different regression models including linear regression, ridge regression, and lasso regression. We tried several other different approaches as well including discretizing the data.</p>
+										<p class="paratext">ProFootball Player Grades are assigned by a human grader (a former coach or other football expert) after watching the video of a game and consists of giving each player a score from -2 to +2 in 0.1 increments based on their performance. An individual’s player grades are added together for an overall annual player grade. Since all our features are numeric, we used several different regression models including linear regression, ridge regression, and lasso regression. When we found that the root mean square error values were higher than desired, we tried several other different approaches  including discretizing the data.</p>
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
 								</div>		
@@ -100,8 +100,7 @@
 										<header class="major">
 											<h2>Results</h2>
 										</header>
-										<p class="paratext">[4 sentences  Describe the key results (how well your solution performed in no more than a paragraph, along with your key findings, e.g. which learners performed best, which features were most important)]</p>
-										<p class="paratext">We initially employed several regression learners as our features and class were were continuous numerical. However, all outputs had unacceptably high root mean square errors so we decided to discretize the data and employ models that can predict a binary positive or negative value for a player’s average player grade per game in a single year. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>
+										<p class="paratext">We initially employed several regression learners as our features and class were continuous. However, all outputs had unacceptably high root mean square errors so we decided to discretize the data and employ models that can predict whether a player’s average player grade per game in a single year would be positive or negative. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey (we found that there were no features that were stronger than others) with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>
 										<p class="paratext">[At least one picture or graph that illustrates your work, with a caption explaining what the figure shows and its significance][One of the heat maps here]</p>
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
@@ -114,7 +113,61 @@
 										<header class="major">
 											<h2>Model</h2>
 										</header>
-										<p class="paratext"></p>
+										
+											<form>
+												<div class="form-style-1">													
+													<label>Super.TAP.Score <span class="required">*</span></label>
+													<input type="text" name="superTapScore" class="field-long" />
+													<label>TAP.Score <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Concentration.Speed.Score <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Mental.Toughness <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Champion.Rating <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Super.Mental.Toughness <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Super.Coachability <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+												</div>
+												<div class="form-style-2">													
+													<label>Super.Performance <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Combat.Score <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Competitive.Desire <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Confidence <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Learning.Aptitude <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Attention.to.Detail <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Common.Sense <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+												</div>
+												<div class="form-style-3">										
+													<label>Decisiveness <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Composure <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Desire <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Stability <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Work.Smarts <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Coachability <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+													<label>Intelligence <span class="required">*</span></label>
+													<input type="text" name="tapScore" class="field-long" />
+												</div>
+												<div class="style=clear-both"></div>
+												
+												<input type="submit" value="Submit" />
+											</form>										
+										
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
 								</div>			
