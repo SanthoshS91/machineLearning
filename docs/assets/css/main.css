@@ -1632,7 +1632,7 @@
 		background-image: url("../../images/nw-1080p-background.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("../../images/nw-1080p-background.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("../../images/nw-1080p-background.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-size: 100% 737px;
+		background-size: 100% 100vh;
         background-repeat: no-repeat;
 		
 	}
@@ -1651,7 +1651,7 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #4E015C;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
