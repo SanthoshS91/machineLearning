@@ -19,7 +19,6 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/NorthwesternWildcats-2.png" alt="" /></span>
@@ -36,7 +35,7 @@
 							<li><a href="#application">Motivation</a></li>
 							<li><a href="#approach">Approach</a></li>
 							<li><a href="#results">Results</a></li>	
-							<li><a href="#model">Model</a></li>
+							<!-- <li><a href="#model">Model</a></li> -->
 							<li><a href="#team">Meet the team</a></li>
 							<li><a href="#credits">Credits</a></li>
 						</ul>
@@ -66,7 +65,7 @@
 										<header class="major">
 											<h2>Motivation</h2>
 										</header>
-										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. The Northwestern University men’s football team brought in $36,212,907 between the years 2015-2016 (Source: US Department of Education Equity in Athletics Data Analysis. https://ope.ed.gov/athletics/#/institution/details. Accessed April 19, 2017). The ability to predict future player performance at time of recruitment can allow NU Football to spend scholarship and other recruitment funds with greater return on investment. </p>
+										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. The Northwestern University men’s football team brought in $36,212,907 between the years 2015-2016 (Source: <a href ="https://ope.ed.gov/athletics/#/institution/search" target = "_blank">US Department of Education Equity in Athletics Data Analysis.</a> Accessed April 19, 2017). The ability to predict future player performance at time of recruitment can allow NU Football to spend scholarship and other recruitment funds with greater return on investment. </p>
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
 								</div>					
@@ -79,7 +78,7 @@
 										<header class="major">
 											<h2>Approach</h2>
 										</header>
-										<p class="paratext">Player psychometric assessment survey scores (Troutwine Athletic Profile (TAP) score)  (http://therightprofile.com/) are comprised of 21 attributes and typically administered annually to every player. These attributes are all numeric with a mix of scores out of 100 or on a scale of 1-5.</p>
+										<p class="paratext">Player psychometric assessment survey scores <a href ="http://therightprofile.com/" target = "_blank">(Troutwine Athletic Profile (TAP) score) </a> are comprised of 21 attributes and typically administered annually to every player. These attributes are all numeric with a mix of scores out of 100 or on a scale of 1-5.</p>
 										<p class="paratext">Examples of TAP scores include:
 										<ul class="tapScores">
 										  <li>Super Mental Toughness (1-100)</li>
@@ -107,7 +106,7 @@
 								</div>			
 							</section>
 							
-							<section id="model" class="main special">						
+							<!-- <section id="model" class="main special">						
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -121,47 +120,47 @@
 													<label>TAP.Score <span class="required">*</span></label>
 													<input type="text" name="tapScore" class="field-long" />
 													<label>Concentration.Speed.Score <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="cSScore" class="field-long" />
 													<label>Mental.Toughness <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="mTough" class="field-long" />
 													<label>Champion.Rating <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="champRat" class="field-long" />
 													<label>Super.Mental.Toughness <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="supMenToughScore" class="field-long" />
 													<label>Super.Coachability <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="supCoachScore" class="field-long" />
 												</div>
 												<div class="form-style-2">													
 													<label>Super.Performance <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="supPerScore" class="field-long" />
 													<label>Combat.Score <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="comScore" class="field-long" />
 													<label>Competitive.Desire <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="compScore" class="field-long" />
 													<label>Confidence <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="confScore" class="field-long" />
 													<label>Learning.Aptitude <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="learningAptiScore" class="field-long" />
 													<label>Attention.to.Detail <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="attDetailScore" class="field-long" />
 													<label>Common.Sense <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="comScore" class="field-long" />
 												</div>
 												<div class="form-style-3">										
 													<label>Decisiveness <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="decScore" class="field-long" />
 													<label>Composure <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="compScore" class="field-long" />
 													<label>Desire <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="desireScore" class="field-long" />
 													<label>Stability <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="stabScore" class="field-long" />
 													<label>Work.Smarts <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="workSmartScore" class="field-long" />
 													<label>Coachability <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="coachScore" class="field-long" />
 													<label>Intelligence <span class="required">*</span></label>
-													<input type="text" name="tapScore" class="field-long" />
+													<input type="text" name="intelScore" class="field-long" />
 												</div>
 												<div class="style=clear-both"></div>
 												
@@ -169,9 +168,9 @@
 											</form>										
 										
 									</div>
-									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
+									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> 
 								</div>			
-							</section>
+							</section>-->
 							
 							
 							<section id="team" class="main special">
@@ -235,7 +234,7 @@
 								<dd>680 N. Lakeshore Dr., Suite 1400, Chicago, IL 60611</dd> 
 							</dl>							
 						</section> -->
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Untitled. Design: HTML5 UP.</p>
 					</footer>
 
 			</div>

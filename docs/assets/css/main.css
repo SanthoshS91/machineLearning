@@ -1628,6 +1628,13 @@
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		#background-image: url("../../images/nw-1080p-background.jpg"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		#background-image: url("../../images/nw-1080p-background.jpg"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		#background-image: url("../../images/nw-1080p-background.jpg"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		#background-image: url("../../images/nw-1080p-background.jpg"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		#background-size: 100% 545px;
+        #background-repeat: no-repeat;
+		
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1653,6 +1660,7 @@
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
+		font-family: buttler;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -3096,10 +3104,15 @@
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
+		
 	}
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
+			#color: #4E015C;
+		    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+			#text-align: left;
+		
 		}
 
 		#header p {
@@ -3997,4 +4010,8 @@
 
 label{
 	text-align:left;
+}
+
+p a{
+	color: #00f;
 }
