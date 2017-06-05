@@ -100,11 +100,18 @@
 											<h2>Results</h2>
 										</header>
 										<p class="paratext">We initially employed several regression learners as our features and class were continuous. However, all outputs had unacceptably high root mean square errors so we decided to discretize the data and employ models that can predict whether a player’s average player grade per game in a single year would be positive or negative. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey (we found that there were no features that were stronger than others) with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>
-										<p class="paratext">[At least one picture or graph that illustrates your work, with a caption explaining what the figure shows and its significance][One of the heat maps here]</p>
-										<img src="images/table1.png" alt="" />
-										<figcaption>Table 1. Regression RMSE (test data) Results for Season Player Grade</figcaption>
-										<img src="images/table2.png" alt="" />
-										<figcaption>Table 2. Classification Accuracy for Season Player Grade</figcaption>
+										<div class ="output_images">
+											<img src="images/dis_allfeatures.png" alt="" />
+											<figcaption>Figure 1. Heat Map of Correlation Metrics (season player grade, binary output)</figcaption>
+											<img src="images/dis_stepwise.png" alt="" />
+											<figcaption>Figure 2: Heat Map of Correlation Metrics for Step-wise Attributes (season player grade, binary output)</figcaption>
+										</div>
+										<div class ="output_images">
+											<img src="images/table1.png" alt="" />
+											<figcaption>Table 1. Regression RMSE (test data) Results for Season Player Grade</figcaption>
+											<img src="images/table2.png" alt="" />
+											<figcaption>Table 2. Classification Accuracy for Season Player Grade</figcaption>
+										<div>
 									</div>
 									
 								</div>			
@@ -185,25 +192,26 @@
 									<article>
 										<a href="#" class="image"><img src="images/sidd.jpg" alt="" /></a>
 										<div class="inner">											
-											<p><b>Siddharth Muthukumaran:</b> Graduate student at Northwestern University in Computer Science. Involved in data collection, data preprocessing, feature selection, model generation and result analyis.<br/>Email											</p>
+											<p><strong>Siddharth Muthukumaran:</strong> Graduate student at Northwestern University in Computer Science. Involved in data collection, data preprocessing, feature selection, model generation and result analyis.<br/>Email: siddharthmuthukumaran2018@u.northwestern.edu</p>
 										</div>
 									</article>
 									<article>
 										<a href="#" class="image"><img src="images/ada.jpg" alt="" /></a>
 										<div class="inner">											
-											<p><b>Ada Ng:</b> PhD student at Northwestern University in Technology and Social Behavior, a combined program in Computer Science and Communication. Involved in data collection, data preprocessing, result analysis, website content and project report.</p>
+											<p><b>Ada Ng:</b> PhD student at Northwestern University in Technology and Social Behavior, a combined program in Computer Science and Communication. Involved in data collection, data preprocessing, result analysis, website content and project report.<br/>
+											Email: adang@u.northwestern.edu</p>
 										</div>
 									</article>									
 									<article>
 										<a href="#" class="image"><img src="images/SharmaShanil.jpg" alt="" /></a>
 										<div class="inner">											
-											<p><b>Shanil Sharma:</b> Graduate student in Information Technology at Northwestern University. Involved in data collection, web site, feature selection, model generation and result analysis.</p>										
+											<p><b>Shanil Sharma:</b> Graduate student in Information Technology at Northwestern University. Involved in data collection, web site, feature selection, model generation and result analysis. <br/>Email: shanilsharma2017@u.northwestern.edu</p>										
 										</div>
 									</article>
 									<article>
 										<a href="#" class="image"><img src="images/sant1.jpg" alt="" /></a>
 										<div class="inner">											
-											<p><b>Santhosh Subramanian:</b> Graduate student in Information Technology at Northwestern University. Involved in data collection, web site, feature selection, model generation and result analysis.</p>
+											<p><b>Santhosh Subramanian:</b> Graduate student in Information Technology at Northwestern University. Involved in data collection, web site, feature selection, model generation and result analysis. <br/>Email: santhoshsubramanian2017@u.northwestern.edu</p>
 										</div>
 									</article>
 								</div>								
