@@ -51,7 +51,7 @@
 										<header class="major">
 											<h2 class="stress">Abstract</h2>
 										</header>
-										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for a candidate if they were to join the NU Football team based on the results of a psychometric assessment survey. After experimenting with several regression learners, we decided to discretize the data and employ models that can predict whether a player’s average player grade per game in a single year would be positive or negative. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we don't have sufficient evidence to reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>									
+										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting a potential recruit’s season ‘player grade’ if they were to join the NU Football team based on the results of a psychometric assessment survey. After experimenting with several regression learners, we decided to discretize the data and employ models that can predict whether a team member’s season player grade would be positive or negative. The highest accuracy we were able to achieve was 67% using SVM and all 21 measures (features) from the survey with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we don’t have sufficient evidence to reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of season player grade.</p>									
 									</div>
 									<!--<span class="image"><img src="images/Stressed.png" alt="" /></span>-->
 								</div>
@@ -65,7 +65,7 @@
 										<header class="major">
 											<h2>Motivation</h2>
 										</header>
-										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the overall annual ‘player grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. The Northwestern University men’s football team brought in $36,212,907 between the years 2015-2016 (Source: <a href ="https://ope.ed.gov/athletics/#/institution/search" target = "_blank">US Department of Education Equity in Athletics Data Analysis.</a> Accessed April 19, 2017). The ability to predict future player performance at time of recruitment can allow NU Football to spend scholarship and other recruitment funds with greater return on investment. </p>
+										<p class="paratext">Our team collaborated with Northwestern University Football with the goal of predicting the total season ‘player grade’ for an individual if that candidate were to join the NU Football team based on a psychometric assessment survey. The Northwestern University men’s football team brought in $36,212,907 between the years 2015-2016 (Source: <a href ="https://ope.ed.gov/athletics/#/institution/search" target = "_blank">US Department of Education Equity in Athletics Data Analysis.</a> Accessed April 19, 2017). The ability to predict future player performance at time of recruitment can allow NU Football to spend scholarship and other recruitment funds with greater return on investment. </p>
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
 								</div>					
@@ -87,7 +87,7 @@
 										  <li>Desire (1-5)</li>
 										  <li>Coachability (1-5)</li>
 										</ul>
-										<p class="paratext">ProFootball Player Grades are assigned by a human grader (a former coach or other football expert) after watching the video of a game and consists of giving each player a score from -2 to +2 in 0.1 increments based on their performance. An individual’s player grades are added together for an overall annual player grade. Since all our features are numeric, we used several different regression models including linear regression, ridge regression, and lasso regression. When we found that the root mean square error values were higher than desired, we tried several other different approaches  including discretizing the data.</p>
+										<p class="paratext">ProFootball Player Grades are assigned by a human grader (a former coach or other football expert) after watching the video of a game and consists of giving each player a score from -2 to +2 in 0.1 increments based on their performance. An individual’s player grades are added together for an overall season player grade. Since all our features are numeric, we used several different regression models including linear regression, ridge regression, and lasso regression. When we found that the root mean square error values were higher than desired, we tried several other different approaches  including discretizing the data.</p>
 									</div>
 									<!-- <span class="image"><img src="images/LG_WATCH_URBANE3.jpg" alt="" /></span> -->
 								</div>		
@@ -99,7 +99,8 @@
 										<header class="major">
 											<h2>Results</h2>
 										</header>
-										<p class="paratext">We initially employed several regression learners as our features and class were continuous. However, all outputs had unacceptably high root mean square errors so we decided to discretize the data and employ models that can predict whether a player’s average player grade per game in a single year would be positive or negative. The highest accuracy we were able to achieve was 66% using SVM and all 21 measures (features) from the survey (we found that there were no features that were stronger than others) with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s grade per game.</p>
+										<p class="paratext">We initially employed several regression learners as our features and class were continuous. However, all outputs had unacceptably high root mean square errors so we decided to discretize the data and employ models that can predict whether a player’s season player grade would be positive or negative. The highest accuracy we were able to achieve was 67% using SVM and all 21 measures (features) from the survey with a p-value of 0.6929 which is well above the commonly accepted p-value of 0.05. Therefore, we don’t have sufficient evidence to  reject the null hypothesis; none of the features of the TAP test have been found to be significantly predictive of a player’s season player grade.<br/>
+										Lastly, note that relying solely on a reduced feature space based on step-wise analysis (Super Performance, Learning Aptitude, Coachability, Intelligence) did not improve accuracy significantly.</p>
 										<div class ="output_images">
 											<img src="images/dis_allfeatures.png" alt="" />
 											<figcaption>Figure 1. Heat Map of Correlation Metrics (season player grade, binary output)</figcaption>
@@ -192,7 +193,7 @@
 									<article>
 										<a href="#" class="image"><img src="images/sidd.jpg" alt="" /></a>
 										<div class="inner">											
-											<p><strong>Siddharth Muthukumaran:</strong> Graduate student at Northwestern University in Computer Science. Involved in data collection, data preprocessing, feature selection, model generation and result analyis.<br/>Email: siddharthmuthukumaran2018@u.northwestern.edu</p>
+											<p><strong>Siddharth Muthukumaran:</strong> Graduate student at Northwestern University in Computer Science. Involved in data collection, data preprocessing, feature selection, model generation and result analysis.<br/>Email: siddharthmuthukumaran2018@u.northwestern.edu</p>
 										</div>
 									</article>
 									<article>
