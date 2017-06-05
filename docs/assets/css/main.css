@@ -1628,12 +1628,12 @@
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		#background-image: url("../../images/nw-1080p-background.jpg"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		#background-image: url("../../images/nw-1080p-background.jpg"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		#background-image: url("../../images/nw-1080p-background.jpg"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		#background-image: url("../../images/nw-1080p-background.jpg"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		#background-size: 100% 545px;
-        #background-repeat: no-repeat;
+		background-image: url("../../images/nw-1080p-background.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("../../images/nw-1080p-background.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("../../images/nw-1080p-background.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("../../images/nw-1080p-background.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-size: 100% 737px;
+        background-repeat: no-repeat;
 		
 	}
 
@@ -3861,7 +3861,7 @@
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rebeccapurple;
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
